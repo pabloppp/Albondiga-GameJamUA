@@ -132,14 +132,13 @@ public class player_movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		life=this.GetComponent<userStates>().sed;
-		if(state != playerStates.FREEZED){
-			if(life>=0 && life<=limitlow) 
-				state=playerStates.FULLSPEED;
-			if(life<limitsup && life>=limitlow) 
-				state=playerStates.MIDSPEED;
-			if(life>limitsup) 
-				state=playerStates.LOWSPEED;
-		}
+<<<<<<< HEAD
+		if(life>=0 && life<=limitlow) 
+			state=playerStates.FULLSPEED;
+		if(life<limitsup && life>=limitlow) 
+			state=playerStates.MIDSPEED;
+		if(life>limitsup) 
+			state=playerStates.LOWSPEED;
 		if(life==100) 
 			state=playerStates.FALLING;
 		isColision=false;
@@ -151,6 +150,16 @@ public class player_movement : MonoBehaviour {
 				if(life>limitsup) 
 					state=playerStates.LOWSPEED;*/
 
+=======
+		if(state != playerStates.FREEZED){
+			if(life>=0 && life<=limitlow) 
+				state=playerStates.FULLSPEED;
+			if(life<limitsup && life>=limitlow) 
+				state=playerStates.MIDSPEED;
+			if(life>limitsup) 
+				state=playerStates.LOWSPEED;
+		}
+>>>>>>> master
 
 			//Es real todo
 			if(life>=0 && life<=limitlow){
