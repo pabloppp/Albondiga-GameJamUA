@@ -5,7 +5,10 @@ public class userStates : MonoBehaviour {
 		
 	public enum modes{
 		IDLE,
-		WALKING
+		WALKING,
+		FULLSPEED,
+		MIDSPEED,
+		LOWSPEED
 	}
 
 	public float sed = 0;
@@ -13,7 +16,6 @@ public class userStates : MonoBehaviour {
 	public float staticLosePcent = 1;//%
 	public float dinamicLosePcent = 2;//%
 	public float loseEachSeconds = 5;//seconds
-
 	float _warningMin = 0.20f;
 
 	public modes mode = modes.IDLE;
@@ -31,7 +33,12 @@ public class userStates : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(this.GetComponent<player_movement>().movement==false){
+			mode=modes.IDLE;
+		}
+		else{
+			mode=modes.WALKING;
+		}
 	}
 
 	public float getSedPercent(){
@@ -43,15 +50,33 @@ public class userStates : MonoBehaviour {
 		while (true) {
 
 			yield return new WaitForSeconds(loseEachSeconds); //wait
-
-			switch(mode){
-			case modes.IDLE:
+			if(mode==modes.IDLE){
+				sed = Mathf.Clamp(sed+sedMax*(staticLosePcent/100), 0, sedMax);
+				mode=modes.IDLE;
+			}
+			else{
+				sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
+				mode=modes.WALKING;
+			}
+			/*switch(this.GetComponent<player_movement>().state){
+			case playerStates.IDLE:
 				sed = Mathf.Clamp(sed+sedMax*(staticLosePcent/100), 0, sedMax);
 				break;
-			case modes.WALKING:
+			case playerStates.FULLSPEED:
 				sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
 				break;
-			}
+			case playerStates.MIDSPEED:
+				sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
+				break;
+			case playerStates.LOWSPEED:
+				sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
+				break;
+
+			
+			}*/
+
+			if(this.GetComponent<player_movement>())
+				sed = Mathf.Clamp(sed+sedMax*(staticLosePcent/100), 0, sedMax);
 		}
 
 	}
