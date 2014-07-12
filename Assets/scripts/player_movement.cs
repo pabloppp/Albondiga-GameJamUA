@@ -64,7 +64,7 @@ public class player_movement : MonoBehaviour {
 	public bool allowAtack = true;
 	public bool allowJump = true;
 	public bool sendStateMessages = true;
-	
+	public bool movement=false;
 	
 	//Components
 	
@@ -74,11 +74,19 @@ public class player_movement : MonoBehaviour {
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody>();
 		StartCoroutine("FSM");
+
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		
+		life=this.GetComponent<userStates>().sed;
+		if(life>=0 && life<=limitlow) 
+			state=playerStates.FULLSPEED;
+		if(life<limitsup && life>=limitlow) 
+			state=playerStates.MIDSPEED;
+		if(life>limitsup) 
+			state=playerStates.LOWSPEED;
+
 	}
 	
 	public IEnumerator FSM(){
@@ -128,13 +136,14 @@ public class player_movement : MonoBehaviour {
 	
 	//IDLE
 	void idle(){
-		if(movementKey()){
-			if(life<=100 && life>=limitsup) 
+		movement=false;
+		/*if(movementKey()){
+			if(life>=0 && life<=limitlow) 
 				state=playerStates.FULLSPEED;
 			if(life<limitsup && life>=limitlow) 
 				state=playerStates.MIDSPEED;
-			if(life<limitlow) 
-				state=playerStates.LOWSPEED;
+			if(life>limitsup) 
+				state=playerStates.LOWSPEED;*/
 		//	else state = playerStates.WALKING; //If any movement key is pressed while idle it goes to walking
 		/*	if(life=>100 && life<75)
 				state=playerStates.WALKING;
@@ -142,14 +151,16 @@ public class player_movement : MonoBehaviour {
 				state=playerStates.MIDSPEED;
 			if(life<25)
 				state=playerStates.LOWSPEED;*/
-		}
+		//}
 	}// END IDLE
 	
 	
 	//RUNNING AND WALKING
 	void moving(float vel){
-		
-		if(!movementKey()) state = playerStates.IDLE;
+		movement=true;
+		if(!movementKey()){ state = playerStates.IDLE;
+			movement=false;
+		}
 		if(!grounded) state = playerStates.FALLING;
 		
 		//keys
