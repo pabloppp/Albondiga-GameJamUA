@@ -39,10 +39,17 @@ public class player_movement : MonoBehaviour {
 	public KeyCode backwardKey = KeyCode.S;
 	public KeyCode leftKey = KeyCode.A;
 	public KeyCode rightKey = KeyCode.D;
+	public KeyCode reset = KeyCode.Space;
+
 	
 	public bool mimicCameraDir = true; 
+
 	public bool rootMotion = false;
 	public bool rootRotation = false;
+	public bool isColision= false;
+	public int isTexto= 0;// 0 no pongo nada  //1 es pocima //2 piedra
+	public int vision= 0;// porcentaje de certeza
+
 	public float walkSpeed = 5;
 	public float runSpeed = 10;
 	public float FullSpeed = 7;
@@ -52,6 +59,7 @@ public class player_movement : MonoBehaviour {
 	public float life = 100;
 	public float limitsup=75;
 	public float limitlow=25;
+	public float distanceTower=60;
 	//that means the FORWARD MOVEMENT will always be in the direction of the camera
 	
 	//--- ACTIONS
@@ -69,12 +77,56 @@ public class player_movement : MonoBehaviour {
 	//Components
 	
 	Rigidbody myRigidbody; 
-	
+	public GameObject inventario;
+	//public GameObject cantimplora;
 	// Use this for initialization
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody>();
 		StartCoroutine("FSM");
 
+	}
+
+
+	void TareaVerdadera(){
+		if(inventario.GetComponent<Inventory>().type==0 && inventario.GetComponent<Inventory>().esPocima==true){
+			//	Destroy(inventario);
+			inventario=GameObject.Find ("cantiplora_standard");
+			GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+			inventario.GetComponent<Inventory>().esPocima=true;
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+		}
+		
+		if(inventario.GetComponent<Inventory>().type==1 && inventario.GetComponent<Inventory>().esPocima==false){
+			//	Destroy(inventario);
+			inventario=GameObject.Find ("stone_standard");
+			GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+			inventario.GetComponent<Inventory>().esPocima=false;
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+		}
+
+
+
+	}
+
+	void TareaMiente(){
+		if(inventario.GetComponent<Inventory>().type==1 && inventario.GetComponent<Inventory>().esPocima==true){
+			//	Destroy(inventario);
+			inventario=GameObject.Find ("stone_standard");
+			GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+			inventario.GetComponent<Inventory>().esPocima=true;
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+		}
+		
+		if(inventario.GetComponent<Inventory>().type==0 && inventario.GetComponent<Inventory>().esPocima==false){
+			//	Destroy(inventario);
+			inventario=GameObject.Find ("cantiplora_standard");
+			GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+			inventario.GetComponent<Inventory>().esPocima=false;
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+		}
+		
+		
+		
 	}
 	
 	// Update is called once per frame
@@ -86,7 +138,53 @@ public class player_movement : MonoBehaviour {
 			state=playerStates.MIDSPEED;
 		if(life>limitsup) 
 			state=playerStates.LOWSPEED;
+		if(life==100) 
+			state=playerStates.FALLING;
+		isColision=false;
+		if(inventario!=null){
+			/*	if(life>=0 && life<=limitlow) 
+					state=playerStates.FULLSPEED;
+				if(life<limitsup && life>=limitlow) 
+					state=playerStates.MIDSPEED;
+				if(life>limitsup) 
+					state=playerStates.LOWSPEED;*/
 
+
+			//Es real todo
+			if(life>=0 && life<=limitlow){
+				TareaVerdadera();
+
+
+			}
+			// al 66 por ciento es real
+			if(life<limitsup && life>=limitlow){
+
+				if(vision>33){
+					TareaVerdadera();
+
+				}
+				else{
+					TareaMiente();
+//					
+				}
+
+			}
+			// al 33 por ciento es real
+			
+			if(life>limitsup){ 
+				if(vision>66){
+					TareaVerdadera();
+					
+				}
+				else{
+					TareaMiente();
+					//					
+				}
+			}
+
+		}
+	
+	
 	}
 	
 	public IEnumerator FSM(){
@@ -130,7 +228,39 @@ public class player_movement : MonoBehaviour {
 		}
 		
 	}
-	
+
+
+	void OnTriggerEnter (Collider other) {
+		//other.gameObject.parent=this.gameObject.transform;
+		if(other.gameObject.tag=="stone" && inventario==null){
+			//inventario=other.gameObject;
+		//	Debug.Log(other.gameObject.tag);
+			isColision=true;
+			if(Input.GetKey(reset)){
+				vision=Random.Range(1,100);
+				GameObject.Find ("stone_standard").GetComponent<Inventory>().esPocima=other.gameObject.GetComponent<Inventory>().esPocima;
+				Destroy(other.gameObject);
+				inventario=GameObject.Find ("stone_standard");
+			}
+		}
+		//Destroy(other.gameObject);
+	}
+	void OnTriggerStay (Collider other) {
+		//other.gameObject.parent=this.gameObject.transform;
+		if(other.gameObject.tag=="stone" && inventario==null){
+			//
+		//	Debug.Log(other.gameObject.tag);
+			isColision=true;
+			if(Input.GetKey(reset)){
+				vision=Random.Range(1,100);
+				GameObject.Find ("stone_standard").GetComponent<Inventory>().esPocima=other.gameObject.GetComponent<Inventory>().esPocima;
+				Destroy(other.gameObject);
+				inventario=GameObject.Find ("stone_standard");
+			}
+
+		}
+		//Destroy(other.gameObject);
+	}
 	
 	//STATE BIT SCRIPTS
 	
@@ -181,7 +311,10 @@ public class player_movement : MonoBehaviour {
 			if(mimicCameraDir) moveDir += new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z);
 			else moveDir += Vector3.right;
 		}
-		
+
+		if(inventario!=null)
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+
 		/*
 		if(mimicCameraDir){
 			moveDir = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z);
@@ -224,7 +357,21 @@ public class player_movement : MonoBehaviour {
 	
 	//FALLING
 	void falling(){
-		if(grounded) state = playerStates.IDLE;
+
+		if(Input.GetKey(reset)){
+			int angulo=Random.Range(1,360);
+			Debug.Log (angulo);
+			//		this.transform.position= new Vector3(GameObject.Find("tower").transform.x+Mathf.Sin(angulo)*60f,GameObject.Find("tower").transform.y,GameObject.Find("tower").transform.z+Mathf.Cos(angulo)*60);
+			this.transform.position= new Vector3(GameObject.Find("tower").transform.position.x+Mathf.Sin(angulo)*distanceTower,this.transform.position.y,GameObject.Find("tower").transform.position.z+Mathf.Cos(angulo)*distanceTower);
+			//if(grounded) 
+			state = playerStates.IDLE;
+			this.GetComponent<userStates>().sed=0;
+		}
+		else{
+			Debug.Log ("muertooooo");
+		}
+
+
 	}//END FALLING
 	
 	//ATTACKING
@@ -301,5 +448,75 @@ public class player_movement : MonoBehaviour {
 		}
 		
 	}
+
+	IEnumerator time(float duration)
+		
+	{
+		
+		yield return new WaitForSeconds(duration); //Wait
+			isTexto=0;
+
+	
+		
+		// Debug.Log("End Wait() function and the time is: "+Time.time);
+		
+	}
+
+	void OnGUI(){
+		//---
+		if(state==playerStates.FALLING){
+		GUIStyle simple = new GUIStyle (GUIStyle.none);
+		GUI.color = Color.red;
+		simple.normal.textColor = Color.red;
+		GUI.TextArea (new Rect(275,275,200,20),"You lose pulsa Space",simple);
+		}
+		if(isColision==true){
+			GUIStyle simple = new GUIStyle (GUIStyle.none);
+			GUI.color = Color.red;
+			simple.normal.textColor = Color.red;
+			GUI.TextArea (new Rect(275,275,200,20),"Para coger la piedra pulsa Space",simple);
+		}
+		if(Input.GetKey(attackKey) && inventario!=null){
+			if(inventario.GetComponent<Inventory>().esPocima==true){
+				isTexto=1;
+				StartCoroutine(time(1f));
+				inventario=null;
+				GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+				GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+				Destroy(inventario);
+			}
+
+		}
+		if(Input.GetKey(attackKey) && inventario!=null ){
+			if(inventario.GetComponent<Inventory>().esPocima==false){
+				isTexto=2;
+				StartCoroutine(time(1f));
+				inventario=null;
+				GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+				GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
+			}
+			
+		}
+
+		if(isTexto==1){
+			GUIStyle simple = new GUIStyle (GUIStyle.none);
+			GUI.color = Color.red;
+			simple.normal.textColor = Color.red;
+			GUI.TextArea (new Rect(275,275,200,20),"Has recuperado salud",simple);
+
+		}
+		if(isTexto==2){
+			GUIStyle simple = new GUIStyle (GUIStyle.none);
+			GUI.color = Color.red;
+			simple.normal.textColor = Color.red;
+			GUI.TextArea (new Rect(275,275,200,20),"Es una triste piedra",simple);
+			
+		}
+
+
+		
+	}
+
+
 	
 }
