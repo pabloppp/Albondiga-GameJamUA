@@ -1,0 +1,978 @@
+fileFormatVersion: 2
+guid: ccb697a29dd1941d396b8b36e0889e9d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature|Bone.001
+    100004: Armature|Bone.002
+    100006: Armature|Bone.002_L
+    100008: Armature|Bone.002_L.001
+    100010: Armature|Bone.002_L.002
+    100012: Armature|Bone.002_L.003
+    100014: Armature|Bone.002_L.004
+    100016: Armature|Bone.002_L.005
+    100018: Armature|Bone.002_L.006
+    100020: Armature|Bone.002_L.007
+    100022: Armature|Bone.002_R
+    100024: Armature|Bone.002_R.001
+    100026: Armature|Bone.002_R.002
+    100028: Armature|Bone.002_R.003
+    100030: Armature|Bone.002_R.004
+    100032: Armature|Bone.002_R.005
+    100034: Armature|Bone.002_R.006
+    100036: Armature|Bone.002_R.007
+    100038: Armature|Bone_L
+    100040: Armature|Bone_L.001
+    100042: Armature|Bone_L.002
+    100044: Armature|Bone_L.003
+    100046: Armature|Bone_L.004
+    100048: Armature|Bone_R
+    100050: Armature|Bone_R.001
+    100052: Armature|Bone_R.002
+    100054: Armature|Bone_R.003
+    100056: Armature|Bone_R.004
+    100058: Armature|Centro
+    100060: Armature|codoIK_L
+    100062: Armature|codoIK_R
+    100064: Armature|head
+    100066: Armature|manoIK_L
+    100068: Armature|manoIK_R
+    100070: Armature|neck
+    100072: Armature|palma_L
+    100074: Armature|palma_R
+    100076: Armature|palmaIK_L
+    100078: Armature|palmaIK_R
+    100080: Armature|pelvisUP
+    100082: Armature|pieIK_L
+    100084: Armature|pieIK_R
+    100086: Armature|rodillaIK_L
+    100088: Armature|rodillaIK_R
+    100090: Armature|rotCenter
+    100092: Camera
+    100094: Cube
+    100096: Cube.001
+    100098: Cube.002
+    100100: Cube.003
+    100102: Cube.004
+    100104: Cube.005
+    100106: Cube.006
+    100108: Cube.007
+    100110: Cube.008
+    100112: Lamp
+    100114: //RootNode
+    400000: Armature
+    400002: Armature|Bone.001
+    400004: Armature|Bone.002
+    400006: Armature|Bone.002_L
+    400008: Armature|Bone.002_L.001
+    400010: Armature|Bone.002_L.002
+    400012: Armature|Bone.002_L.003
+    400014: Armature|Bone.002_L.004
+    400016: Armature|Bone.002_L.005
+    400018: Armature|Bone.002_L.006
+    400020: Armature|Bone.002_L.007
+    400022: Armature|Bone.002_R
+    400024: Armature|Bone.002_R.001
+    400026: Armature|Bone.002_R.002
+    400028: Armature|Bone.002_R.003
+    400030: Armature|Bone.002_R.004
+    400032: Armature|Bone.002_R.005
+    400034: Armature|Bone.002_R.006
+    400036: Armature|Bone.002_R.007
+    400038: Armature|Bone_L
+    400040: Armature|Bone_L.001
+    400042: Armature|Bone_L.002
+    400044: Armature|Bone_L.003
+    400046: Armature|Bone_L.004
+    400048: Armature|Bone_R
+    400050: Armature|Bone_R.001
+    400052: Armature|Bone_R.002
+    400054: Armature|Bone_R.003
+    400056: Armature|Bone_R.004
+    400058: Armature|Centro
+    400060: Armature|codoIK_L
+    400062: Armature|codoIK_R
+    400064: Armature|head
+    400066: Armature|manoIK_L
+    400068: Armature|manoIK_R
+    400070: Armature|neck
+    400072: Armature|palma_L
+    400074: Armature|palma_R
+    400076: Armature|palmaIK_L
+    400078: Armature|palmaIK_R
+    400080: Armature|pelvisUP
+    400082: Armature|pieIK_L
+    400084: Armature|pieIK_R
+    400086: Armature|rodillaIK_L
+    400088: Armature|rodillaIK_R
+    400090: Armature|rotCenter
+    400092: Camera
+    400094: Cube
+    400096: Cube.001
+    400098: Cube.002
+    400100: Cube.003
+    400102: Cube.004
+    400104: Cube.005
+    400106: Cube.006
+    400108: Cube.007
+    400110: Cube.008
+    400112: Lamp
+    400114: //RootNode
+    4300000: Cube.008
+    4300002: Cube.007
+    4300004: Cube.006
+    4300006: Cube.005
+    4300008: Cube.004
+    4300010: Cube.002
+    4300012: Cube.001
+    4300016: Cube.003
+    7400000: Armature|ArmatureAction
+    7400002: Armature|Idle_01
+    7400004: Armature|Run_01
+    9500000: //RootNode
+    13700000: Cube
+    13700002: Cube.001
+    13700004: Cube.002
+    13700006: Cube.003
+    13700008: Cube.004
+    13700010: Cube.005
+    13700012: Cube.006
+    13700014: Cube.007
+    13700016: Cube.008
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle_01
+      takeName: Armature|Idle_01
+      firstFrame: 0
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 1
+      - path: Armature/Camera
+        weight: 1
+      - path: Armature/Lamp
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: Cube.006
+        weight: 1
+      - path: Cube.007
+        weight: 1
+      - path: Cube.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Run_01
+      takeName: Armature|Run_01
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 0
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 0
+      - path: Armature/Camera
+        weight: 0
+      - path: Armature/Lamp
+        weight: 0
+      - path: Cube
+        weight: 0
+      - path: Cube.001
+        weight: 0
+      - path: Cube.002
+        weight: 0
+      - path: Cube.003
+        weight: 0
+      - path: Cube.004
+        weight: 0
+      - path: Cube.005
+        weight: 0
+      - path: Cube.006
+        weight: 0
+      - path: Cube.007
+        weight: 0
+      - path: Cube.008
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Armature|pelvisUP
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_L.001
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_R.001
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_L.002
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_R.002
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_L.003
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_R.003
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.001
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.001
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.001
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.002
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.002
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.003
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.004
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone_R.004
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.004
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.005
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_L.007
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.004
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.005
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Armature|Bone.002_R.007
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: player_model(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature
+      position: {x: 0, y: 0, z: 1.19209291e-08}
+      rotation: {x: -.707106829, y: -8.42937027e-08, z: -8.42937169e-08, w: .707106709}
+      scale: {x: 4.40553617, y: 4.40553617, z: 4.40553617}
+      transformModified: 1
+    - name: Armature|Centro
+      position: {x: .000287204457, y: .020037448, z: .242610365}
+      rotation: {x: 0, y: 0, z: 1.19197857e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|pelvisUP
+      position: {x: .00024397597, y: -.0545988455, z: -.0494713187}
+      rotation: {x: .707104027, y: -.00200732844, z: .00200707302, w: .707103848}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|Bone_L
+      position: {x: 7.50041834e-11, y: 5.99468564e-09, z: 2.52018983e-09}
+      rotation: {x: -.351686627, y: -.613810778, z: -.352442563, w: .612647593}
+      scale: {x: 1, y: .999999821, z: .999999821}
+      transformModified: 1
+    - name: Armature|Bone_L.001
+      position: {x: 1.97615013e-09, y: .0375942551, z: -7.20901872e-09}
+      rotation: {x: -.380237967, y: -.502789199, z: .739180982, w: .237136468}
+      scale: {x: .999999762, y: 1.00000024, z: 1.00000024}
+      transformModified: 1
+    - name: Armature|Bone_L.002
+      position: {x: 7.4505806e-09, y: .0930321366, z: 8.94069707e-09}
+      rotation: {x: -.00376024889, y: .642805696, z: -.00112360076, w: .766019225}
+      scale: {x: 1, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: Armature|Bone_L.003
+      position: {x: -1.95577754e-09, y: .113151312, z: -5.16884047e-09}
+      rotation: {x: .650294065, y: -.053916052, z: .14470534, w: .743821919}
+      scale: {x: 1.00000012, y: 1.00000024, z: .99999994}
+      transformModified: 1
+    - name: Armature|Bone_L.004
+      position: {x: 1.38770362e-09, y: .0482345, z: 6.78119283e-10}
+      rotation: {x: .0117605235, y: -2.54819442e-05, z: .000330299343, w: .999930799}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|Bone_R
+      position: {x: 7.50041834e-11, y: 5.99468564e-09, z: 2.52018983e-09}
+      rotation: {x: -.369879365, y: .621220231, z: .354391426, w: .593027294}
+      scale: {x: .99999994, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: Armature|Bone_R.001
+      position: {x: 4.65661287e-09, y: .0407011285, z: -3.39001431e-08}
+      rotation: {x: .3311041, y: -.440497965, z: .787793219, w: -.275160789}
+      scale: {x: 1, y: 1.00000012, z: .999999702}
+      transformModified: 1
+    - name: Armature|Bone_R.002
+      position: {x: 5.96046457e-09, y: .0930320993, z: -3.7252903e-09}
+      rotation: {x: -.108578689, y: -.638773501, z: .00288988021, w: .761689484}
+      scale: {x: .999999881, y: .999999642, z: .999999881}
+      transformModified: 1
+    - name: Armature|Bone_R.003
+      position: {x: -2.14204188e-09, y: .113151304, z: -6.98491931e-10}
+      rotation: {x: .683935821, y: .214147449, z: -.23402822, w: .656965375}
+      scale: {x: .999999523, y: .999999881, z: .999999583}
+      transformModified: 1
+    - name: Armature|Bone_R.004
+      position: {x: -1.77969928e-09, y: .0482344963, z: -3.72529035e-10}
+      rotation: {x: .0117605245, y: 2.54101888e-05, z: -.000330305425, w: .999930799}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Armature|codoIK_L
+      position: {x: .112173788, y: .108759038, z: .066150479}
+      rotation: {x: .00200724695, y: .707104027, z: .707103848, w: .00200708886}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|codoIK_R
+      position: {x: -.111994028, y: .110031702, z: .0661505088}
+      rotation: {x: .00200708862, y: .707104027, z: .707103848, w: .00200724718}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|manoIK_L
+      position: {x: .078696385, y: .00209181011, z: .0129459901}
+      rotation: {x: -.707104027, y: .00200733612, z: -.00200706394, w: .707103848}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|palmaIK_L
+      position: {x: -.0610570423, y: -.0137978634, z: -.00705825258}
+      rotation: {x: -.707106829, y: 9.26263652e-08, z: -9.2626351e-08, w: .707106709}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|manoIK_R
+      position: {x: -.0742906779, y: -.00183280674, z: .00136689225}
+      rotation: {x: -.707103908, y: .00200715382, z: -.00200724555, w: .707103968}
+      scale: {x: .999999881, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Armature|palmaIK_R
+      position: {x: .0555701815, y: -.0158900693, z: -.019133484}
+      rotation: {x: -.707106829, y: -8.90069671e-08, z: 8.90069529e-08, w: .707106709}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|rotCenter
+      position: {x: 5.15498755e-12, y: .0429747216, z: 2.46218335e-09}
+      rotation: {x: .999995291, y: -.00283149374, z: .00119163794, w: 3.29863337e-06}
+      scale: {x: .995363414, y: .999999762, z: .999999881}
+      transformModified: 1
+    - name: Armature|Bone.001
+      position: {x: 1.00499166e-11, y: 2.21003074e-08, z: 2.70051731e-10}
+      rotation: {x: .999974787, y: -.0071047144, z: -7.57122152e-08, w: 4.31745661e-08}
+      scale: {x: 1.00067997, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002
+      position: {x: -8.14907253e-10, y: .0261294283, z: -1.39445433e-09}
+      rotation: {x: 2.26451302e-08, y: 3.22273159e-08, z: -.00473100133, w: .999988794}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002_L
+      position: {x: 2.32830647e-11, y: .0647630543, z: 1.15609855e-09}
+      rotation: {x: -.562242091, y: .429284155, z: .607366562, w: .361531436}
+      scale: {x: .999999642, y: .999999523, z: .99999994}
+      transformModified: 1
+    - name: Armature|Bone.002_L.001
+      position: {x: -3.7252903e-09, y: .0510975011, z: -4.92436802e-09}
+      rotation: {x: -.352663279, y: -.187718809, z: .123250924, w: .908404946}
+      scale: {x: .999999821, y: .999999762, z: 1.00000024}
+      transformModified: 1
+    - name: Armature|Bone.002_L.002
+      position: {x: 1.49011614e-09, y: .0690287128, z: 3.57627883e-08}
+      rotation: {x: -.294234753, y: .000869965937, z: -.0937457308, w: .951124012}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|palma_R
+      position: {x: -2.98023228e-09, y: .0572213642, z: 1.04308127e-08}
+      rotation: {x: -.569699764, y: .747139215, z: -.238618821, w: .245532662}
+      scale: {x: .999999702, y: .999999821, z: .999999523}
+      transformModified: 1
+    - name: Armature|Bone.002_L.003
+      position: {x: 7.4505806e-09, y: 7.45058071e-10, z: -5.21540633e-09}
+      rotation: {x: .596608281, y: -.384665877, z: .366863966, w: .601249993}
+      scale: {x: .999999881, y: 1, z: .999999762}
+      transformModified: 1
+    - name: Armature|Bone.002_L.004
+      position: {x: -.0116529977, y: .0216575153, z: .000176650283}
+      rotation: {x: -.0292744506, y: -.00199116417, z: .247436434, w: .968459725}
+      scale: {x: .999999881, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: Armature|Bone.002_L.005
+      position: {x: 4.65661287e-10, y: .0321832709, z: 7.82311016e-09}
+      rotation: {x: -1.02533832e-07, y: -1.95392058e-05, z: -.0414841212, w: .99913919}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002_L.006
+      position: {x: -8.19563883e-09, y: .0234909989, z: 1.15484005e-08}
+      rotation: {x: -.0402163081, y: .045085106, z: -.581834197, w: .811060369}
+      scale: {x: 1, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002_L.007
+      position: {x: -6.1467289e-09, y: .0243085008, z: 6.42612585e-09}
+      rotation: {x: -.0246688928, y: -.0187016875, z: .130682454, w: .990940869}
+      scale: {x: 1, y: 1.00000012, z: 1.00000024}
+      transformModified: 1
+    - name: Armature|Bone.002_R
+      position: {x: -.00171801576, y: .0647712052, z: 9.84670123e-10}
+      rotation: {x: .564276516, y: .426614791, z: .609070599, w: -.358643085}
+      scale: {x: 1.00000012, y: 1.00000012, z: .999999821}
+      transformModified: 1
+    - name: Armature|Bone.002_R.001
+      position: {x: -1.49011614e-09, y: .0510975011, z: -6.21112139e-09}
+      rotation: {x: -.262702852, y: .156297997, z: -.174013317, w: .936096966}
+      scale: {x: .999999821, y: .999999702, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|Bone.002_R.002
+      position: {x: 8.10250622e-09, y: .0690286979, z: 2.98023228e-09}
+      rotation: {x: -.385502458, y: -.00087924063, z: .126057461, w: .914055049}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|palma_L
+      position: {x: 8.94069707e-09, y: .0596686713, z: 1.34110456e-08}
+      rotation: {x: .60537225, y: .685582519, z: -.327865243, w: -.236654654}
+      scale: {x: 1, y: 1.00000024, z: .999999523}
+      transformModified: 1
+    - name: Armature|Bone.002_R.003
+      position: {x: 2.9336662e-09, y: -3.7252903e-09, z: 1.34110456e-08}
+      rotation: {x: .59661299, y: .384673417, z: -.366856605, w: .601244986}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Armature|Bone.002_R.004
+      position: {x: -1.04308127e-08, y: .0234909784, z: 4.47034854e-09}
+      rotation: {x: -.027578894, y: -.00180651981, z: -.399533808, w: .916301727}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002_R.005
+      position: {x: 2.98023228e-09, y: .035486456, z: -5.21540633e-09}
+      rotation: {x: -.00139227579, y: -.0012331258, z: .201123491, w: .97956413}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|Bone.002_R.006
+      position: {x: -1.04308127e-08, y: .0234909784, z: 4.47034854e-09}
+      rotation: {x: -.0400558002, y: -.0447016545, z: .621956944, w: .780747592}
+      scale: {x: .999999821, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Armature|Bone.002_R.007
+      position: {x: 9.31322575e-09, y: .0247432534, z: -2.23517427e-09}
+      rotation: {x: -.0250119288, y: .0224999338, z: -.180200487, w: .983054399}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Armature|neck
+      position: {x: 2.32830647e-11, y: .0647630543, z: 1.15609855e-09}
+      rotation: {x: -.0190783087, y: -.706849396, z: -.0190783087, w: .706849396}
+      scale: {x: 1, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Armature|head
+      position: {x: 2.05221107e-09, y: .0147684989, z: -2.38651404e-10}
+      rotation: {x: .0178392734, y: .706882536, z: .0178391058, w: .706880927}
+      scale: {x: 1, y: .999999762, z: 1}
+      transformModified: 1
+    - name: Armature|pieIK_L
+      position: {x: .0620173998, y: -.062132813, z: -.234766603}
+      rotation: {x: 1.79433868e-09, y: .0410711244, z: .999156237, w: 4.36745466e-08}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|pieIK_R
+      position: {x: -.0372738428, y: -.0580880307, z: -.235274538}
+      rotation: {x: .000604221015, y: .0343831852, z: .999254346, w: -.0175564513}
+      scale: {x: 1.00002682, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Armature|rodillaIK_L
+      position: {x: .0512579158, y: -.0174258929, z: -.120154992}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Armature|rodillaIK_R
+      position: {x: -.0506605804, y: -.017698383, z: -.116787784}
+      rotation: {x: 0, y: 0, z: -2.90721005e-07, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Camera
+      position: {x: -.147283211, y: .135250762, z: .0853138864}
+      rotation: {x: .42353344, y: .570988536, z: .692318261, w: .123640157}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Lamp
+      position: {x: .0232542958, y: .0579641238, z: .0980296358}
+      rotation: {x: .144015029, y: .884037375, z: .44279021, w: .040919356}
+      scale: {x: .226987153, y: .226987153, z: .226987153}
+      transformModified: 1
+    - name: Cube
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.001
+      position: {x: -4.22802904e-11, y: 2.70589751e-09, z: 0}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .0840375572, y: .0840375572, z: .0840375572}
+      transformModified: 1
+    - name: Cube.002
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.003
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.004
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.005
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.006
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.007
+      position: {x: 0, y: 0, z: -2.70589751e-09}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    - name: Cube.008
+      position: {x: -2.11398243e-11, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -.707107067, w: .707106531}
+      scale: {x: .226987123, y: .226987123, z: .226987123}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
