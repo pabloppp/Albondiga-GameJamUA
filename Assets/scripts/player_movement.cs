@@ -32,7 +32,9 @@ public class player_movement : MonoBehaviour {
 	public bool grounded = true;
 	
 	public string[] groundTags = {"floor", "ground"};
-	
+
+	//animations
+	private Animator animator;
 	//KEY BINDING 
 	//--- MOVING
 	public KeyCode forwardKey = KeyCode.W;
@@ -55,6 +57,7 @@ public class player_movement : MonoBehaviour {
 	public float FullSpeed = 7;
 	public float MidSpeed = 5;
 	public float LowSpeed = 3.5f;
+	public float penalizacion= 0.4f;
 	public float rotationSpeed = 0;
 	public float life = 100;
 	public float limitsup=75;
@@ -83,7 +86,21 @@ public class player_movement : MonoBehaviour {
 	void Start () {
 		myRigidbody = GetComponent<Rigidbody>();
 		StartCoroutine("FSM");
+		animator= this.GetComponentInChildren<Animator>();
 
+	}
+
+	void Animate(){
+	
+	if(movement==true){
+			if(state==playerStates.FULLSPEED)
+			animator.SetInteger("RunSpeed",1);
+		else
+			animator.SetInteger("RunSpeed",2);
+	
+		}
+	else
+		animator.SetInteger("RunSpeed",0);
 	}
 
 
@@ -93,7 +110,7 @@ public class player_movement : MonoBehaviour {
 			inventario=GameObject.Find ("cantiplora_standard");
 			GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
 			inventario.GetComponent<Inventory>().esPocima=true;
-			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z+4);
 		}
 		
 		if(inventario.GetComponent<Inventory>().type==1 && inventario.GetComponent<Inventory>().esPocima==false){
@@ -122,7 +139,7 @@ public class player_movement : MonoBehaviour {
 			inventario=GameObject.Find ("cantiplora_standard");
 			GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
 			inventario.GetComponent<Inventory>().esPocima=false;
-			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
+			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z+4);
 		}
 		
 		
@@ -131,8 +148,9 @@ public class player_movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		Animate();
 		life=this.GetComponent<userStates>().sed;
-		if(state != playerStates.FREEZED){
+		if(state != playerStates.FREEZED ){
 			if(life>=0 && life<=limitlow) 
 				state=playerStates.FULLSPEED;
 			if(life<limitsup && life>=limitlow) 
@@ -144,6 +162,9 @@ public class player_movement : MonoBehaviour {
 			state=playerStates.FALLING;
 		isColision=false;
 		if(inventario!=null){
+			//modifico las velocidades por llevar peso
+
+
 			/*	if(life>=0 && life<=limitlow) 
 					state=playerStates.FULLSPEED;
 				if(life<limitsup && life>=limitlow) 
@@ -196,6 +217,7 @@ public class player_movement : MonoBehaviour {
 			switch(state){
 			case playerStates.IDLE:
 				if(sendStateMessages) SendMessage("move_idle");
+			
 				idle();
 				break;
 				
@@ -243,6 +265,10 @@ public class player_movement : MonoBehaviour {
 				GameObject.Find ("stone_standard").GetComponent<Inventory>().esPocima=other.gameObject.GetComponent<Inventory>().esPocima;
 				Destroy(other.gameObject);
 				inventario=GameObject.Find ("stone_standard");
+				//cojo peso
+				FullSpeed=FullSpeed*penalizacion;
+				MidSpeed=MidSpeed*penalizacion;
+				LowSpeed=LowSpeed*penalizacion;
 			}
 		}
 		//Destroy(other.gameObject);
@@ -258,6 +284,10 @@ public class player_movement : MonoBehaviour {
 				GameObject.Find ("stone_standard").GetComponent<Inventory>().esPocima=other.gameObject.GetComponent<Inventory>().esPocima;
 				Destroy(other.gameObject);
 				inventario=GameObject.Find ("stone_standard");
+				//cojo peso
+				FullSpeed=FullSpeed*penalizacion;
+				MidSpeed=MidSpeed*penalizacion;
+				LowSpeed=LowSpeed*penalizacion;
 			}
 
 		}
@@ -269,6 +299,7 @@ public class player_movement : MonoBehaviour {
 	//IDLE
 	void idle(){
 		movement=false;
+	
 		/*if(movementKey()){
 			if(life>=0 && life<=limitlow) 
 				state=playerStates.FULLSPEED;
@@ -284,8 +315,8 @@ public class player_movement : MonoBehaviour {
 			if(life<25)
 				state=playerStates.LOWSPEED;*/
 		//}
-	}// END IDLE
-	
+	// END IDLE
+	}
 	
 	//RUNNING AND WALKING
 	void moving(float vel){
@@ -314,9 +345,12 @@ public class player_movement : MonoBehaviour {
 			else moveDir += Vector3.right;
 		}
 
-		if(inventario!=null)
-			inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z);
-
+		if(inventario!=null){
+			if(inventario.GetComponent<Inventory>().type==0)
+				inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y+1,this.transform.position.z);
+			else
+				inventario.transform.position= new Vector3(this.transform.position.x,this.transform.position.y,this.transform.position.z+4);
+		}
 		/*
 		if(mimicCameraDir){
 			moveDir = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z);
@@ -492,9 +526,12 @@ public class player_movement : MonoBehaviour {
 				isTexto=1;
 				StartCoroutine(time(1f));
 				inventario=null;
+				FullSpeed=FullSpeed/penalizacion;
+				MidSpeed=MidSpeed/penalizacion;
+				LowSpeed=LowSpeed/penalizacion;
 				GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
 				GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
-				Destroy(inventario);
+
 			}
 
 		}
@@ -503,6 +540,10 @@ public class player_movement : MonoBehaviour {
 				isTexto=2;
 				StartCoroutine(time(1f));
 				inventario=null;
+				//cojo peso
+				FullSpeed=FullSpeed/penalizacion;
+				MidSpeed=MidSpeed/penalizacion;
+				LowSpeed=LowSpeed/penalizacion;
 				GameObject.Find ("stone_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
 				GameObject.Find ("cantiplora_standard").transform.position=new Vector3(this.transform.position.x,0,this.transform.position.z);
 			}
@@ -513,6 +554,7 @@ public class player_movement : MonoBehaviour {
 			GUIStyle simple = new GUIStyle (GUIStyle.none);
 			GUI.color = Color.red;
 			simple.normal.textColor = Color.red;
+			this.GetComponent<userStates>().sed=0;
 			GUI.TextArea (new Rect(275,275,200,20),"Has recuperado salud",simple);
 
 		}
