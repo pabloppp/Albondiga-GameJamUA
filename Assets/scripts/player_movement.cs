@@ -80,12 +80,14 @@ public class player_movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		life=this.GetComponent<userStates>().sed;
-		if(life>=0 && life<=limitlow) 
-			state=playerStates.FULLSPEED;
-		if(life<limitsup && life>=limitlow) 
-			state=playerStates.MIDSPEED;
-		if(life>limitsup) 
-			state=playerStates.LOWSPEED;
+		if(state != playerStates.FREEZED){
+			if(life>=0 && life<=limitlow) 
+				state=playerStates.FULLSPEED;
+			if(life<limitsup && life>=limitlow) 
+				state=playerStates.MIDSPEED;
+			if(life>limitsup) 
+				state=playerStates.LOWSPEED;
+		}
 
 	}
 	
@@ -247,7 +249,16 @@ public class player_movement : MonoBehaviour {
 		
 	}//END DEAD
 	
-	
+	void move_drinking(){
+		state = playerStates.FREEZED;
+
+	}
+
+	void move_idle(){
+		if(state == playerStates.FREEZED){		
+			state = playerStates.IDLE;
+		}
+	}
 	
 	
 	//Helping Functions

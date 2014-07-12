@@ -45,6 +45,11 @@ public class userStates : MonoBehaviour {
 		return (sed / sedMax);
 	}
 
+	void addSedOasis(float quant){
+		sed -= quant;
+		if(sed < 0) sed = 0;
+	}
+
 	IEnumerator AddSed(){
 
 		while (true) {
