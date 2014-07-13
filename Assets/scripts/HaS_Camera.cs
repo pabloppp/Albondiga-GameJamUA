@@ -61,18 +61,36 @@ public class HaS_Camera : MonoBehaviour {
 				}
 				
 				if(Input.GetMouseButton(1) ){
-					if(restrictFloor) angleToTarget.y = Mathf.Clamp(angleToTarget.y+Input.GetAxis("Mouse Y")*Time.deltaTime*mouseSensitivity, -Mathf.PI/2, 0);
-					else angleToTarget.y = Mathf.Clamp(angleToTarget.y+Input.GetAxis("Mouse Y")*Time.deltaTime*mouseSensitivity, -Mathf.PI/2, Mathf.PI/2);
+					angleToTarget.y = Mathf.Clamp(angleToTarget.y+Input.GetAxis("Mouse Y")*Time.deltaTime*mouseSensitivity, -Mathf.PI/2, Mathf.PI/2);
 					angleToTarget.x = angleToTarget.x+Input.GetAxis("Mouse X")*Time.deltaTime*mouseSensitivity; // Mathf.Clamp(*Time.deltaTime*mouseSensitivity, -Mathf.PI/2, Mathf.PI/2);
 				}
 				
 			}
+
+			if(restrictFloor){
+				//angleToTarget.y = Mathf.Clamp(angleToTarget.y+Input.GetAxis("Mouse Y")*Time.deltaTime*mouseSensitivity, -Mathf.PI/2, 0);
+				RaycastHit hit = new RaycastHit();
+				
+				if (Physics.Raycast (transform.position-Vector3.up, Vector3.up, out hit, 100)) {
+					if(hit.collider.gameObject.tag == "floor"){
+						Vector3 floorCast = transform.position;
+						floorCast.y = hit.point.y+1;
+						transform.position = floorCast;
+						Vector2 newAngle = getAnglesXY(transform.position, target.position);
+						angleToTarget.y = newAngle.y;
+					}
+				}
+				
+				
+			} 
 			
 			
 		}
 		else if(mode == modes.cinematic){
 			//no se que hacer aqui...
 		}
+
+
 		
 		
 	}
