@@ -92,15 +92,23 @@ public class player_movement : MonoBehaviour {
 
 	void Animate(){
 	
-	if(movement==true){
-			if(state==playerStates.FULLSPEED)
-			animator.SetInteger("RunSpeed",1);
-		else
-			animator.SetInteger("RunSpeed",2);
+	if (movement == true) {
+
+
+						if (state == playerStates.FULLSPEED) {
+								animator.SetInteger ("RunSpeed", 1);
+								myRigidbody.drag = 0;
+						} else
+								animator.SetInteger ("RunSpeed", 2);
+
+
 	
-		}
-	else
-		animator.SetInteger("RunSpeed",0);
+				} else {
+
+						animator.SetInteger ("RunSpeed", 0);
+			myRigidbody.drag = 10;
+				}
+
 	}
 
 
@@ -149,6 +157,15 @@ public class player_movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		Animate();
+			
+		RaycastHit hit = new RaycastHit();
+		
+		if (Physics.Raycast (transform.position, -Vector3.up, out hit, 100)) {
+			Vector3 floorCast = transform.position;
+			floorCast.y = hit.point.y;
+			transform.position = floorCast;
+		}
+
 		life=this.GetComponent<userStates>().sed;
 		if(state != playerStates.FREEZED ){
 			state=playerStates.FULLSPEED;

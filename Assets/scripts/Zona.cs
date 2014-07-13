@@ -34,12 +34,13 @@ public class Zona : MonoBehaviour {
 			RaycastHit hit = new RaycastHit();
 			
 			if (Physics.Raycast (randomPosition, -Vector3.up, out hit, 15000)) {
-				randomPosition = new Vector3(position.x + x, hit.point.y + 1, position.z + z);
+				randomPosition = new Vector3(position.x + x, hit.point.y, position.z + z);
 			}
 
 			var clon = (GameObject)Instantiate (Resources.Load ("OasisPrefab"),
 			                                    randomPosition,
 			                                    Quaternion.identity);
+			clon.transform.localScale = Vector3.one*2;
 			
 			if(i == 0)
 			{
