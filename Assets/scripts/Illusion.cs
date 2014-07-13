@@ -27,8 +27,14 @@ public class Illusion : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!isReal) {
-		   Disappear ();
-		}
+						Disappear ();
+				} else
+						Test();
+	}
+
+	void Test(){
+		if (Vector3.Distance (transform.position, player.position) < rangeViewDisappear)
+						player.GetComponent<userStates> ().sed = 0;
 	}
 
 	void Disappear()

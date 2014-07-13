@@ -60,8 +60,8 @@ public class player_movement : MonoBehaviour {
 	public float penalizacion= 0.4f;
 	public float rotationSpeed = 0;
 	public float life = 100;
-	public float limitsup=75;
-	public float limitlow=25;
+	public float limitsup=100;
+	public float limitlow=90;
 	public float distanceTower=60;
 	//that means the FORWARD MOVEMENT will always be in the direction of the camera
 	
@@ -92,15 +92,23 @@ public class player_movement : MonoBehaviour {
 
 	void Animate(){
 	
-	if(movement==true){
-			if(state==playerStates.FULLSPEED)
-			animator.SetInteger("RunSpeed",1);
-		else
-			animator.SetInteger("RunSpeed",2);
+	if (movement == true) {
+
+
+						if (state == playerStates.FULLSPEED) {
+								animator.SetInteger ("RunSpeed", 1);
+								myRigidbody.drag = 0;
+						} else
+								animator.SetInteger ("RunSpeed", 2);
+
+
 	
-		}
-	else
-		animator.SetInteger("RunSpeed",0);
+				} else {
+
+						animator.SetInteger ("RunSpeed", 0);
+			myRigidbody.drag = 10;
+				}
+
 	}
 
 
@@ -149,14 +157,26 @@ public class player_movement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		Animate();
+			
+		RaycastHit hit = new RaycastHit();
+		
+		if (Physics.Raycast (transform.position, -Vector3.up, out hit, 100)) {
+			Vector3 floorCast = transform.position;
+			floorCast.y = hit.point.y;
+			transform.position = floorCast;
+		}
+
 		life=this.GetComponent<userStates>().sed;
 		if(state != playerStates.FREEZED ){
+			state=playerStates.FULLSPEED;
+			/*
 			if(life>=0 && life<=limitlow) 
 				state=playerStates.FULLSPEED;
 			if(life<limitsup && life>=limitlow) 
 				state=playerStates.MIDSPEED;
 			if(life>limitsup) 
 				state=playerStates.LOWSPEED;
+				*/
 		}
 		if(life==100) 
 			state=playerStates.FALLING;
