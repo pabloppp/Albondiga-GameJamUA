@@ -6,10 +6,11 @@ public class playerDrinks : MonoBehaviour {
 	public KeyCode drinkKey = KeyCode.Space;
 	public bool playerDrinking = false;
 	private bool detectingOasis = false;
-	public float oasisWater = 35f;
+	public float oasisWater;
 
 	public Font f;
 
+	private bool keyPulsada = false;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +18,11 @@ public class playerDrinks : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-	
+	void Update () {		
+		if (Input.GetKeyUp(drinkKey))
+		{
+			keyPulsada = false;
+		}	
 	}
 
 	void OnGUI(){
@@ -41,11 +44,11 @@ public class playerDrinks : MonoBehaviour {
 		print ("touching...");
 		if(other.gameObject.tag == "oasis"){
 			detectingOasis = true;
-			if(Input.GetKeyDown(drinkKey) && !playerDrinking){
+			if(Input.GetKeyDown(drinkKey) && !playerDrinking && !keyPulsada){
+				keyPulsada = true;
 				print ("drinking...");
 				StartCoroutine("drinking");
 			}
-
 		} 
 	}
 
@@ -53,7 +56,6 @@ public class playerDrinks : MonoBehaviour {
 		if(other.gameObject.tag == "oasis"){
 			detectingOasis = false;
 		}
-
 	}
 
 	IEnumerator drinking(){
@@ -61,11 +63,8 @@ public class playerDrinks : MonoBehaviour {
 		SendMessage("move_drinking", SendMessageOptions.DontRequireReceiver);
 		playerDrinking = true;
 		SendMessage("addSedOasis", oasisWater, SendMessageOptions.DontRequireReceiver);
-		yield return new WaitForSeconds(3);	
+		yield return new WaitForSeconds(0);	
 		SendMessage("move_idle",SendMessageOptions.DontRequireReceiver);
 		playerDrinking = false;
 	}
-
-
-	
 }

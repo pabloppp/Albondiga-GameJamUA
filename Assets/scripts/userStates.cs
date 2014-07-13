@@ -54,13 +54,15 @@ public class userStates : MonoBehaviour {
 
 		while (true) {
 
-			yield return new WaitForSeconds(loseEachSeconds); //wait
+			yield return new WaitForSeconds(0.5f);//loseEachSeconds); //wait
 			if(mode==modes.IDLE){
-				sed = Mathf.Clamp(sed+sedMax*(staticLosePcent/100), 0, sedMax);
+				//sed = Mathf.Clamp(sed+sedMax*(staticLosePcent/100), 0, sedMax);
+				sed = Mathf.Clamp(sed + staticLosePcent, 0, sedMax);
 				mode=modes.IDLE;
 			}
 			else{
-				sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
+				//sed = Mathf.Clamp(sed+sedMax*(dinamicLosePcent/100), 0, sedMax);
+				sed = Mathf.Clamp(sed + dinamicLosePcent, 0, sedMax);
 				mode=modes.WALKING;
 			}
 			/*switch(this.GetComponent<player_movement>().state){
