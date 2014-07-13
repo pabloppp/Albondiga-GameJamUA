@@ -424,7 +424,7 @@ public class player_movement : MonoBehaviour {
 			this.GetComponent<userStates>().sed=0;
 		}
 		else{
-			Debug.Log ("muertooooo");
+			//Debug.Log ("muertooooo");
 		}
 
 
