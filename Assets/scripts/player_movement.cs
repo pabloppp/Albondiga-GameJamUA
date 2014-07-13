@@ -52,10 +52,12 @@ public class player_movement : MonoBehaviour {
 	public bool rootMotion = false;
 	public bool rootRotation = false;
 	public bool isColision= false;
+	public bool isDeath= false;
 	public int isTexto= 0;// 0 no pongo nada  //1 es pocima //2 piedra
 	public int vision= 0;// porcentaje de certeza
 
 	public float walkSpeed = 5;
+	public float pasos;
 	public float runSpeed = 10;
 	public float FullSpeed = 7;
 	public float MidSpeed = 5;
@@ -103,11 +105,12 @@ public class player_movement : MonoBehaviour {
 								myRigidbody.drag = 0;
 						} else
 								animator.SetInteger ("RunSpeed", 2);
+						if(pasos % 10==0)
+							this.GetComponent<AudioSource>().Play();
+			pasos++;
 
-
-	
 				} else {
-
+			pasos=0;
 						animator.SetInteger ("RunSpeed", 0);
 			myRigidbody.drag = 10;
 				}
@@ -417,6 +420,12 @@ public class player_movement : MonoBehaviour {
 	//FALLING
 	void falling(){
 
+		if(isDeath==false){
+			isDeath=true;
+			GameObject.Find ("GameOver").GetComponent<AudioSource>().Play();
+			GameObject.Find ("Sound").GetComponent<AudioSource>().Stop();
+			GameObject.Find("Death").GetComponent<AudioSource>().Play();
+		}
 		if(Input.GetKey(reset)){
 			int angulo=Random.Range(1,360);
 			Debug.Log (angulo);
@@ -425,6 +434,8 @@ public class player_movement : MonoBehaviour {
 			//if(grounded) 
 			Instantiate(explosion, transform.position, Quaternion.identity );
 			state = playerStates.IDLE;
+			GameObject.Find ("GameOver").GetComponent<AudioSource>().Stop();
+			GameObject.Find ("Sound").GetComponent<AudioSource>().Play();
 			this.GetComponent<userStates>().sed=0;
 		}
 		else{
