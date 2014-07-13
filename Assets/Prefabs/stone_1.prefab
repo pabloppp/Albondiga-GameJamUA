@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f019d4f30721840a539e8ead114163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  porcentaje: 70
+  porcentaje: 50
   esPocima: 0
   asignado: 0
   type: 0
