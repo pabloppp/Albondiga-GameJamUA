@@ -106,7 +106,7 @@ public class player_movement : MonoBehaviour {
 						} else
 								animator.SetInteger ("RunSpeed", 2);
 						if(pasos % 10==0)
-							this.GetComponent<AudioSource>().Play();
+							GameObject.Find("Walk").GetComponent<AudioSource>().Play();
 			pasos++;
 
 				} else {
@@ -423,7 +423,7 @@ public class player_movement : MonoBehaviour {
 		if(isDeath==false){
 			isDeath=true;
 			GameObject.Find ("GameOver").GetComponent<AudioSource>().Play();
-			GameObject.Find ("Sound").GetComponent<AudioSource>().Stop();
+			GameObject.Find ("Fondo").GetComponent<AudioSource>().Stop();
 			GameObject.Find("Death").GetComponent<AudioSource>().Play();
 		}
 		if(Input.GetKey(reset)){
@@ -435,7 +435,7 @@ public class player_movement : MonoBehaviour {
 			Instantiate(explosion, transform.position, Quaternion.identity );
 			state = playerStates.IDLE;
 			GameObject.Find ("GameOver").GetComponent<AudioSource>().Stop();
-			GameObject.Find ("Sound").GetComponent<AudioSource>().Play();
+			GameObject.Find ("Fondo").GetComponent<AudioSource>().Play();
 			this.GetComponent<userStates>().sed=0;
 		}
 		else{
