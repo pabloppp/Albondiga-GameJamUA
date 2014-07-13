@@ -3,16 +3,33 @@ using System.Collections;
 
 public class SnakeBehavior : MonoBehaviour {
 	public float speed;
+	public Transform cola;
+
 	private GameObject player;
 
 	// Use this for initialization
 	void Start () {
 		this.player = GameObject.FindGameObjectWithTag ("Player");
+
+		//StartCoroutine ("SpawnBody");
+	}
+
+	IEnumerator SpawnBody()
+	{
+		while(true)
+		{
+			var clon = (GameObject)Instantiate (
+							Resources.Load ("bodyFragment"),
+							transform.position,
+				transform.rotation);
+
+			yield return new WaitForSeconds(0.4f);
+		}
 	}
 
 	void FixedUpdate () {
 		if (this.player != null && this.player.GetComponent<userStates> ().sed < this.player.GetComponent<userStates> ().sedMax)
-						UpdateMovement ();
+			UpdateMovement ();
 		else {
 			rigidbody.velocity = Vector3.zero;
 
@@ -37,13 +54,12 @@ public class SnakeBehavior : MonoBehaviour {
 		                                 Mathf.Clamp (y, -speed, speed),
 		                                 Mathf.Clamp (z, -speed, speed));
 
+		/*Vector3 randomPosition = new Vector3(transform.position.x, 200, transform.position.z);
+		
+		RaycastHit hit = new RaycastHit();
+		
+		if (Physics.Raycast (randomPosition, -Vector3.up, out hit, 200)) {
+			transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);*/
 
-	}
-
-	void OnTriggerEnter(Collider collider)
-	{
-		if (collider.gameObject.tag == "Player") {
-			collider.GetComponent<userStates>().sed = collider.GetComponent<userStates>().sedMax;
-		}
 	}
 }
