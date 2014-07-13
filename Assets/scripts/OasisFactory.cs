@@ -6,7 +6,7 @@ public class OasisFactory : MonoBehaviour {
 	public Transform player;
 	public Terrain terrain;
 
-	private int zonas = 4;
+	private int zonas = 5;
 	private IList<Zona> _zones;
 
 	// Use this for initialization

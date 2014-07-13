@@ -6,11 +6,15 @@ public class SnakeBehavior : MonoBehaviour {
 	public Transform cola;
 
 	private GameObject player;
+	private spawnGenerator sp;
+	private Vector3 initPos;
 
 	// Use this for initialization
 	void Start () {
 		this.player = GameObject.FindGameObjectWithTag ("Player");
-
+		sp = GetComponent<spawnGenerator>();
+		sp.spawn(transform.position);
+		initPos = transform.position;
 		//StartCoroutine ("SpawnBody");
 	}
 
@@ -60,6 +64,11 @@ public class SnakeBehavior : MonoBehaviour {
 		
 		if (Physics.Raycast (randomPosition, -Vector3.up, out hit, 200)) {
 			transform.position = new Vector3(transform.position.x, hit.point.y, transform.position.z);*/
+
+	}
+
+	public void resetSnake(){
+		transform.position = initPos;
 
 	}
 }

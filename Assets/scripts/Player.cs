@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	public Font fuente;
 
 	public int speed;
 	// Use this for initialization

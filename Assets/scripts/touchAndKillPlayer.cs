@@ -2,14 +2,12 @@
 using System.Collections;
 
 public class touchAndKillPlayer : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
-	void Update () {
-	
+	void OnTriggerEnter(Collider other)
+	{
+		if(other.tag == "Player")
+		{
+			other.GetComponent<userStates>().sed = other.GetComponent<userStates>().sedMax; 
+		}
 	}
 }

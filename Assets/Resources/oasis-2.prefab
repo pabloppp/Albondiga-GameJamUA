@@ -741,6 +741,9 @@ MonoBehaviour:
   rangeViewDisappear: 10
   isReal: 0
   showDistance: 50
+  drinkKey: 32
+  waterQuantityPerUse: 500
+  f: {fileID: 0}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

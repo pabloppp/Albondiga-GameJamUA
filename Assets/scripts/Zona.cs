@@ -24,7 +24,7 @@ public class Zona : MonoBehaviour {
 
 	void MakeOasis()
 	{
-		var totalOasis = Random.Range (2, 6);
+		var totalOasis = Random.Range (3, 7);
 
 		for(int i = 0; i < totalOasis; i++) {
 			var x = Random.Range(0, width);
@@ -41,7 +41,7 @@ public class Zona : MonoBehaviour {
 			                                    randomPosition,
 			                                    Quaternion.identity);
 			
-			if(i >= 0)
+			if(i <= 1)
 			{
 				clon.GetComponent<Illusion>().isReal = true;
 			}

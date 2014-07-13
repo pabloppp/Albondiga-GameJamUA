@@ -16,10 +16,14 @@ public class Illusion : MonoBehaviour {
 	private bool keyWasPressed = false;
 	private bool isDrinking = false;
 
+	
+	public Font f;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
-		
+
+		f=player.GetComponent<playerDrinks>().f;
 		exp = GetComponent<explode>();
 	}
 	
@@ -33,8 +37,22 @@ public class Illusion : MonoBehaviour {
 			{
 				this.keyWasPressed = true;
 
-				player.GetComponent<userStates>().sed -= this.waterQuantityPerUse;
+				player.GetComponent<userStates>().sed = Mathf.Max(player.GetComponent<userStates>().sed -
+					this.waterQuantityPerUse, 0);
 			}
+		}
+	}
+
+	void OnGUI(){
+		if (isReal && Vector3.Distance(this.transform.position, player.position) < this.rangeViewDisappear) {
+
+		GUIStyle myStyle = new GUIStyle(GUI.skin.label);
+		GUI.skin.font = f;
+		myStyle.fontSize = 25;
+		myStyle.normal.textColor = Color.black;
+					
+				GUI.Label (new Rect (Screen.width/2-125,Screen.height*0.8f,250,50), "Press SPACE to drink", myStyle);
+
 		}
 	}
 

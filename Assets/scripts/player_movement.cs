@@ -35,6 +35,8 @@ public class player_movement : MonoBehaviour {
 
 	public GameObject explosion;
 
+	Vector3 initialposition;
+
 
 	//animations
 	private Animator animator;
@@ -81,7 +83,8 @@ public class player_movement : MonoBehaviour {
 	public bool allowJump = true;
 	public bool sendStateMessages = true;
 	public bool movement=false;
-	
+
+	private spawnGenerator sp;
 	//Components
 	
 	Rigidbody myRigidbody; 
@@ -89,6 +92,9 @@ public class player_movement : MonoBehaviour {
 	//public GameObject cantimplora;
 	// Use this for initialization
 	void Start () {
+		initialposition = transform.position;
+		sp = GetComponent<spawnGenerator>();
+		sp.spawn(transform.position);
 		myRigidbody = GetComponent<Rigidbody>();
 		StartCoroutine("FSM");
 		animator= this.GetComponentInChildren<Animator>();
@@ -184,7 +190,7 @@ public class player_movement : MonoBehaviour {
 				state=playerStates.LOWSPEED;
 				*/
 		}
-		if(life==100) 
+		if(life==10000) 
 			state=playerStates.FALLING;
 		isColision=false;
 		if(inventario!=null){
@@ -427,13 +433,18 @@ public class player_movement : MonoBehaviour {
 			GameObject.Find("Death").GetComponent<AudioSource>().Play();
 		}
 		if(Input.GetKey(reset)){
+			//sp.spawn(transform
 			int angulo=Random.Range(1,360);
 			Debug.Log (angulo);
 			//		this.transform.position= new Vector3(GameObject.Find("tower").transform.x+Mathf.Sin(angulo)*60f,GameObject.Find("tower").transform.y,GameObject.Find("tower").transform.z+Mathf.Cos(angulo)*60);
-			this.transform.position= new Vector3(GameObject.Find("tower").transform.position.x+Mathf.Sin(angulo)*distanceTower,this.transform.position.y,GameObject.Find("tower").transform.position.z+Mathf.Cos(angulo)*distanceTower);
+
+			this.transform.position = initialposition;
+			sp.spawn(initialposition);
+			//this.transform.position= new Vector3(GameObject.Find("tower").transform.position.x+Mathf.Sin(angulo)*distanceTower,this.transform.position.y,GameObject.Find("tower").transform.position.z+Mathf.Cos(angulo)*distanceTower);
 			//if(grounded) 
-			Instantiate(explosion, transform.position, Quaternion.identity );
+			//Instantiate(explosion, transform.position, Quaternion.identity );
 			state = playerStates.IDLE;
+			GameObject.Find("Snake").GetComponent<SnakeBehavior>().resetSnake();
 			GameObject.Find ("GameOver").GetComponent<AudioSource>().Stop();
 			GameObject.Find ("Fondo").GetComponent<AudioSource>().Play();
 			this.GetComponent<userStates>().sed=0;
