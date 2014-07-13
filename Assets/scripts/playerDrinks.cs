@@ -39,7 +39,7 @@ public class playerDrinks : MonoBehaviour {
 
 	void OnTriggerStay(Collider other){
 		print ("touching...");
-		if(other.gameObject.tag == "water"){
+		if(other.gameObject.tag == "oasis"){
 			detectingOasis = true;
 			if(Input.GetKeyDown(drinkKey) && !playerDrinking){
 				print ("drinking...");
@@ -50,7 +50,7 @@ public class playerDrinks : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
-		if(other.gameObject.tag == "water"){
+		if(other.gameObject.tag == "oasis"){
 			detectingOasis = false;
 		}
 

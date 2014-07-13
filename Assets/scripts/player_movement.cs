@@ -33,6 +33,9 @@ public class player_movement : MonoBehaviour {
 	
 	public string[] groundTags = {"floor", "ground"};
 
+	public GameObject explosion;
+
+
 	//animations
 	private Animator animator;
 	//KEY BINDING 
@@ -420,6 +423,7 @@ public class player_movement : MonoBehaviour {
 			//		this.transform.position= new Vector3(GameObject.Find("tower").transform.x+Mathf.Sin(angulo)*60f,GameObject.Find("tower").transform.y,GameObject.Find("tower").transform.z+Mathf.Cos(angulo)*60);
 			this.transform.position= new Vector3(GameObject.Find("tower").transform.position.x+Mathf.Sin(angulo)*distanceTower,this.transform.position.y,GameObject.Find("tower").transform.position.z+Mathf.Cos(angulo)*distanceTower);
 			//if(grounded) 
+			Instantiate(explosion, transform.position, Quaternion.identity );
 			state = playerStates.IDLE;
 			this.GetComponent<userStates>().sed=0;
 		}

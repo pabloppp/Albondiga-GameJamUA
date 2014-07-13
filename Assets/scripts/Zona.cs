@@ -24,7 +24,7 @@ public class Zona : MonoBehaviour {
 
 	void MakeOasis()
 	{
-		var totalOasis = Random.Range (2, 4);
+		var totalOasis = Random.Range (2, 6);
 
 		for(int i = 0; i < totalOasis; i++) {
 			var x = Random.Range(0, width);
@@ -37,10 +37,9 @@ public class Zona : MonoBehaviour {
 				randomPosition = new Vector3(position.x + x, hit.point.y, position.z + z);
 			}
 
-			var clon = (GameObject)Instantiate (Resources.Load ("OasisPrefab"),
+			var clon = (GameObject)Instantiate (Resources.Load ("oasis-"+Random.Range(1,7)),
 			                                    randomPosition,
 			                                    Quaternion.identity);
-			clon.transform.localScale = Vector3.one*2;
 			
 			if(i == 0)
 			{
