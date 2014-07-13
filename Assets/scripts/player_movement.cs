@@ -28,7 +28,9 @@ public class player_movement : MonoBehaviour {
 	//------
 	
 	public playerStates state = playerStates.IDLE;  //CURRENT STATE
-	
+
+	public Font f;
+
 	public bool grounded = true;
 	
 	public string[] groundTags = {"floor", "ground"};
@@ -556,10 +558,16 @@ public class player_movement : MonoBehaviour {
 	void OnGUI(){
 		//---
 		if(state==playerStates.FALLING){
-		GUIStyle simple = new GUIStyle (GUIStyle.none);
+		/*GUIStyle simple = new GUIStyle (GUIStyle.none);
 		GUI.color = Color.red;
 		simple.normal.textColor = Color.red;
-		GUI.TextArea (new Rect(275,275,200,20),"You lose pulsa Space",simple);
+		GUI.TextArea (new Rect(275,275,200,20),"You lose pulsa Space",simple);*/
+			GUIStyle myStyle = new GUIStyle(GUI.skin.label);
+			GUI.skin.font = f;
+			myStyle.fontSize = 25;
+			myStyle.normal.textColor = Color.black;	
+			GUI.Label (new Rect (Screen.width/2-190,Screen.height*0.8f,800,50), "You LOSE press SPACE to RESTART", myStyle);
+		
 		}
 		if(isColision==true){
 			GUIStyle simple = new GUIStyle (GUIStyle.none);
@@ -595,6 +603,8 @@ public class player_movement : MonoBehaviour {
 			}
 			
 		}
+
+
 
 		if(isTexto==1){
 			GUIStyle simple = new GUIStyle (GUIStyle.none);
