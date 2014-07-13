@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEditor;
+using UnityEngineInternal;
 
 /// <summary>
 /// Script para controlar la camara en 3ª persona, configurable

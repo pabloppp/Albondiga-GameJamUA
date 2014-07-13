@@ -9,12 +9,7 @@ public class Inventory : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		int valor = Random.Range(1,100);
-		if(porcentaje<=valor)
+		if(porcentaje>=valor)
 			esPocima=true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
