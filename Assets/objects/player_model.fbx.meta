@@ -152,7 +152,551 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle_01
+      takeName: Armature|Idle_01
+      firstFrame: 0
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: Cube.006
+        weight: 1
+      - path: Cube.007
+        weight: 1
+      - path: Cube.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Run_01
+      takeName: Armature|Run_01
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: Cube.006
+        weight: 1
+      - path: Cube.007
+        weight: 1
+      - path: Cube.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Run_02
+      takeName: Armature|Run_02
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: Cube.006
+        weight: 1
+      - path: Cube.007
+        weight: 1
+      - path: Cube.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature|Run_03
+      takeName: Armature|Run_03
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Armature|Centro
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_L/Armature|Bone_L.001/Armature|Bone_L.002/Armature|Bone_L.003/Armature|Bone_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|Bone_R/Armature|Bone_R.001/Armature|Bone_R.002/Armature|Bone_R.003/Armature|Bone_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|codoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_L/Armature|palmaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|manoIK_R/Armature|palmaIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.004/Armature|Bone.002_L.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_L/Armature|Bone.002_L.001/Armature|Bone.002_L.002/Armature|palma_R/Armature|Bone.002_L.003/Armature|Bone.002_L.006/Armature|Bone.002_L.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.004/Armature|Bone.002_R.005
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|Bone.002_R/Armature|Bone.002_R.001/Armature|Bone.002_R.002/Armature|palma_L/Armature|Bone.002_R.003/Armature|Bone.002_R.006/Armature|Bone.002_R.007
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pelvisUP/Armature|rotCenter/Armature|Bone.001/Armature|Bone.002/Armature|neck/Armature|head
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|pieIK_R
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_L
+        weight: 1
+      - path: Armature/Armature|Centro/Armature|rodillaIK_R
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: Cube.006
+        weight: 1
+      - path: Cube.007
+        weight: 1
+      - path: Cube.008
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
