@@ -6,7 +6,7 @@ public class OasisFactory : MonoBehaviour {
 	public Transform player;
 	public Terrain terrain;
 
-	private int zonas = 6;
+	private int zonas = 4;
 	private IList<Zona> _zones;
 
 	// Use this for initialization
@@ -26,7 +26,7 @@ public class OasisFactory : MonoBehaviour {
 				zona.height = Mathf.RoundToInt(largoZona);
 				zona.width = Mathf.RoundToInt(anchoZona);
 
-				zona.position = new Vector3(i, 1, j);
+				zona.position = new Vector3(i, 0, j);
 
 				zona.SpawnOasis();
 

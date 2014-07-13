@@ -3,61 +3,40 @@ using System.Collections;
 
 public class Illusion : MonoBehaviour {
 	public float rangeViewDisappear = 10f;
-	public float rangeViewAppear = 25f;
 	public bool isReal = false;
-
+	public float showDistance = 50f;
+	private Transform particulas;
 	private Transform player;
-
-	private Renderer[] _renderers;
+	private explode exp;
 
 	// Use this for initialization
 	void Start () {
-		_renderers = GetComponentsInChildren<Renderer>();
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
+		exp = GetComponent<explode>();
 
-		if (!isReal) {
-			var _colliders = GetComponentsInChildren<Collider> ();
+		/*this.particulas = gameObject.transform.FindChild("particulas");
 
-			foreach (var collider in _colliders) {
-				collider.enabled = false;
-			}
-		}
+		if(this.particulas != null)
+			this.particulas.gameObject.SetActive(false);*/
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (!isReal) {
 		   Disappear ();
+		}
+		if (Vector3.Distance (transform.position, player.position) < showDistance) {	
+
 		}
 	}
 
 	void Disappear()
 	{
-		if (Vector3.Distance (transform.position, player.position) < rangeViewDisappear) {
-			foreach(var rendererChildren in _renderers)
-			{
-				/*var color = rendererChildren.material.color;
+		if (Vector3.Distance (transform.position, player.position) < rangeViewDisappear) {		
+			Debug.Log("Puff...");
+			exp.Explode(transform.position+Vector3.up*1.2f);
+			Destroy(gameObject);
 
-				if(color.a > 0f)
-				{
-					color.a -= 0.005f;
-					rendererChildren.material.color = color;
-				}*/
-
-				Destroy(gameObject);
-			}
-		}
-		else if (Vector3.Distance (transform.position, player.position) >= rangeViewAppear) {
-			foreach(var rendererChildren in _renderers)
-			{
-				var color = rendererChildren.material.color;
-
-				if(color.a < 1f)
-				{
-					color.a += 0.5f;				
-					rendererChildren.material.color = color;
-				}		
-			}
 		}
 	}
 }

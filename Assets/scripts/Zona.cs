@@ -24,7 +24,7 @@ public class Zona : MonoBehaviour {
 
 	void MakeOasis()
 	{
-		var totalOasis = Random.Range (2, 8);
+		var totalOasis = Random.Range (2, 6);
 
 		for(int i = 0; i < totalOasis; i++) {
 			var x = Random.Range(0, width);
@@ -34,10 +34,10 @@ public class Zona : MonoBehaviour {
 			RaycastHit hit = new RaycastHit();
 			
 			if (Physics.Raycast (randomPosition, -Vector3.up, out hit, 15000)) {
-				randomPosition = new Vector3(position.x + x, hit.point.y + 1, position.z + z);
+				randomPosition = new Vector3(position.x + x, hit.point.y, position.z + z);
 			}
 
-			var clon = (GameObject)Instantiate (Resources.Load ("OasisPrefab"),
+			var clon = (GameObject)Instantiate (Resources.Load ("oasis-"+Random.Range(1,7)),
 			                                    randomPosition,
 			                                    Quaternion.identity);
 			

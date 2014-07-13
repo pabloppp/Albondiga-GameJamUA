@@ -7,7 +7,7 @@ public class birdBehavior : MonoBehaviour {
 	public float rotSpeed = 0f;
 	public float mediumHeight = 10;
 	public float heightDif = 5;
-	public float heightFq = 5;
+	//public float heightFq = 5;
 
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class birdBehavior : MonoBehaviour {
 	void Update () {
 		transform.Translate(-Vector3.forward*Time.deltaTime*speed);
 		Vector3 tempPos = transform.position;
-		tempPos.y = mediumHeight+Mathf.Cos(Time.deltaTime*heightFq)*heightDif;
+		tempPos.y = mediumHeight+Mathf.Cos(Time.deltaTime)*heightDif;
 		transform.position = tempPos;
 		transform.Rotate(Vector3.up*Time.deltaTime*rotSpeed);
 	}
