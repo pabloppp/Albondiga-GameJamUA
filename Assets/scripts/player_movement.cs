@@ -60,8 +60,8 @@ public class player_movement : MonoBehaviour {
 	public float penalizacion= 0.4f;
 	public float rotationSpeed = 0;
 	public float life = 100;
-	public float limitsup=75;
-	public float limitlow=25;
+	public float limitsup=100;
+	public float limitlow=90;
 	public float distanceTower=60;
 	//that means the FORWARD MOVEMENT will always be in the direction of the camera
 	
@@ -151,12 +151,15 @@ public class player_movement : MonoBehaviour {
 		Animate();
 		life=this.GetComponent<userStates>().sed;
 		if(state != playerStates.FREEZED ){
+			state=playerStates.FULLSPEED;
+			/*
 			if(life>=0 && life<=limitlow) 
 				state=playerStates.FULLSPEED;
 			if(life<limitsup && life>=limitlow) 
 				state=playerStates.MIDSPEED;
 			if(life>limitsup) 
 				state=playerStates.LOWSPEED;
+				*/
 		}
 		if(life==100) 
 			state=playerStates.FALLING;
