@@ -102,7 +102,7 @@ public class player_movement : MonoBehaviour {
 								animator.SetInteger ("RunSpeed", 2);
 
 
-	
+			this.GetComponent<AudioSource>().Play();
 				} else {
 
 						animator.SetInteger ("RunSpeed", 0);
